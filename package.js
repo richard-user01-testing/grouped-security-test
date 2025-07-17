@@ -1,0 +1,9 @@
+{
+  "name": "grouped-security-test-app",
+  "version": "1.0.0",
+  "description": "Test repo with multiple vulnerable dependencies",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "axios": "0.21.0"
+  }
+}
