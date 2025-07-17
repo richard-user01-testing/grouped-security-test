@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # This is the attack. We are defining a group for security updates,
+    # trying to override the admin's "disabled" setting.
+    groups:
+      forced-grouping:
+        applies-to: "security-updates"
+        patterns:
+          - "*" # Group everything
